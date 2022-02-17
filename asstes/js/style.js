@@ -9,10 +9,10 @@ if (choisi < num)
 if (choisi > num)
     document.form1.indice.value = "Non, le nombre est plus petit.";
 if (choisi == num) {
-    window.alert("Correct ! Vous avez trouvé en " + NbEssais + "essais.");
+    document.form1.indice.value = "Correct ! Vous avez trouvé en " + NbEssais + "essais.";
     location.reload();
     }
 if (NbEssais == 10) {
-    window.alert("Désolé, c'est fini. Le nombre correct était : " + num);
+    document.form1.indice.value = ("Désolé, c'est fini. Le nombre correct était : " + num);
     location.reload();
 }}
